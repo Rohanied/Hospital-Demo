@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hospital-demo</string>
+    <string name="landing_page_logo">LandingPageLogo</string>
+</resources>
