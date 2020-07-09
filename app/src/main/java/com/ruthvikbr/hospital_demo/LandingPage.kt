@@ -14,13 +14,6 @@ class LandingPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_landing_page)
-        val animFadeIn = AnimationUtils.loadAnimation(
-            applicationContext,
-            R.anim.fade_in)
-
-        val imageView:ImageView = findViewById(R.id.imageView)
-        imageView.startAnimation(animFadeIn)
-
 
     }
 }
