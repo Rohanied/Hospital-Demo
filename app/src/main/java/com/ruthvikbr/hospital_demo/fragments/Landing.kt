@@ -31,7 +31,7 @@ class Landing : Fragment() {
         val imageView: ImageView = requireActivity().findViewById(R.id.imageView)
         imageView.startAnimation(animFadeIn)
 
-        val button:Button = requireActivity().findViewById(R.id.begin)
+        val button:Button = requireActivity().findViewById(R.id.get_started_button)
         button.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_landing_to_signIn))
     }
 

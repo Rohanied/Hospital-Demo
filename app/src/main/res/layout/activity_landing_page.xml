@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LandingPage">
+    tools:context=".LandingPage"
+    android:background="#a9ddf3">
+
+
 
     <fragment
         android:id="@+id/fragment_landing"
@@ -16,3 +21,4 @@
         tools:ignore="FragmentTagUsage" />
 
 </LinearLayout>
+

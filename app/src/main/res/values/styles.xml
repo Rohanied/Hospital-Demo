@@ -6,4 +6,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+    <style name="Widget.InputTextLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/TextAppearance.TextLayout.HintColor</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="hintTextColor">?attr/colorPrimaryDark</item>
+        <item name="boxStrokeColor">@color/colorAccent</item>
+
+    </style>
+
+    <style name="TextAppearance.TextLayout.HintColor" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
 </resources>
