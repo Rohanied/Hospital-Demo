@@ -7,4 +7,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="get_started_button" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="background">@color/buttonBackground</item>
+        <item name="backgroundColor">@color/buttonBackground</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+
 </resources>
