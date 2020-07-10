@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-=======
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> upstream/master
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,28 +9,8 @@
     tools:context=".LandingPage"
     android:background="#a9ddf3">
 
-<<<<<<< HEAD
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/landingpagepng"
-        android:id="@+id/imageView"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        style="@style/get_started_button"
-        android:text="@string/get_started"
-        android:id="@+id/get_started_button"/>
 
 
-</RelativeLayout>
-=======
     <fragment
         android:id="@+id/fragment_landing"
         android:layout_width="match_parent"
@@ -43,4 +21,4 @@
         tools:ignore="FragmentTagUsage" />
 
 </LinearLayout>
->>>>>>> upstream/master
+
