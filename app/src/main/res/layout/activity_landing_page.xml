@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> upstream/master
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,6 +11,7 @@
     tools:context=".LandingPage"
     android:background="#a9ddf3">
 
+<<<<<<< HEAD
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,3 +32,15 @@
 
 
 </RelativeLayout>
+=======
+    <fragment
+        android:id="@+id/fragment_landing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation"
+        tools:ignore="FragmentTagUsage" />
+
+</LinearLayout>
+>>>>>>> upstream/master
