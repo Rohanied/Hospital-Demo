@@ -83,4 +83,6 @@ class SignUp : Fragment() {
             Navigation.createNavigateOnClickListener(R.id.action_signIn_to_home2)
         }
     }
+
+
 }
