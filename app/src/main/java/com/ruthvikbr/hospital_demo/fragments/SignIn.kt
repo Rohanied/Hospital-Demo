@@ -54,6 +54,8 @@ class SignIn : Fragment() {
         binding.cancelButton.setOnClickListener {
             binding.emailEditText.setText(" ")
             binding.passwordEditText.setText(" ")
+            it.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_signIn_to_landing))
+
         }
 
         binding.signUpTextView.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_signIn_to_signUp))
@@ -75,6 +77,8 @@ class SignIn : Fragment() {
 
                 } else {
                     updateUI(null)
+                    Toast.makeText(requireContext(), "Login Failed", Toast.LENGTH_SHORT)
+                        .show()
                 }
             }
     }
