@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.SignIn">
+    tools:context=".fragments.SignIn"
+
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +22,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="60dp"
-        android:src="@drawable/logopng1"/>
+        android:src="@drawable/logopng1"
+        android:contentDescription="@string/logo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -61,7 +64,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
                 android:text="@string/log_in" />
 
             <com.google.android.material.button.MaterialButton
@@ -69,9 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
-                android:layout_marginRight="12dp"
                 android:layout_toStartOf="@id/login_button"
-                android:layout_toLeftOf="@id/login_button"
                 android:text="@string/cancel" />
 
         </RelativeLayout>

@@ -25,5 +25,28 @@
         <action
             android:id="@+id/action_signIn_to_landing"
             app:destination="@id/landing" />
+        <action
+            android:id="@+id/action_signIn_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_signIn_to_home2"
+            app:destination="@id/home2" />
     </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.ruthvikbr.hospital_demo.fragments.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_signIn"
+            app:destination="@id/signIn" />
+        <action
+            android:id="@+id/action_signUp_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.ruthvikbr.hospital_demo.fragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>

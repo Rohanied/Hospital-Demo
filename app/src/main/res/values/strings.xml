@@ -3,8 +3,6 @@
     <string name="landing_page_logo">LandingPageLogo</string>
 
 
-
-
     <string name="get_started">Get Started</string>
 
     <string name="let_s_begin">Get Started</string>
@@ -21,5 +19,6 @@
     <string name="sign_up">Sign Up</string>
     <string name="existing_user">Existing User? Log in</string>
     <string name="background_imh">landing_background</string>
+    <string name="logo">Logo</string>
 
 </resources>
