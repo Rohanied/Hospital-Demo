@@ -1,7 +1,6 @@
 package com.ruthvikbr.hospital_demo.fragments
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.Navigation
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.ruthvikbr.hospital_demo.R
@@ -40,12 +40,20 @@ class SignIn : Fragment() {
                 Toast.makeText(requireContext(), "Enter Email", Toast.LENGTH_SHORT).show()
             }
             password.ifEmpty {
-                Toast.makeText(
-                    requireContext(),
-                    "Enter Password",
-                    Toast.LENGTH_SHORT
-                ).show()
+                Toast.makeText(requireContext(), "Enter Password", Toast.LENGTH_SHORT).show()
             }
+            if (password.length < 6) {
+                Toast.makeText(requireContext(), "Password length has to be 6", Toast.LENGTH_SHORT)
+                    .show()
+            } else if ((password.isNotEmpty() && (email.isNotEmpty()) && (password.length >= 6))) {
+                login(email, password)
+            }
+
+        }
+
+        binding.cancelButton.setOnClickListener {
+            binding.emailEditText.setText(" ")
+            binding.passwordEditText.setText(" ")
         }
 
         binding.signUpTextView.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_signIn_to_signUp))
@@ -58,17 +66,23 @@ class SignIn : Fragment() {
 
     private fun login(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password)
-            .addOnCompleteListener() { task ->
+            .addOnCompleteListener(requireActivity()) { task ->
                 if (task.isSuccessful) {
-                    // Sign in success, update UI with the signed-in user's information
-                    Log.d("TAG", "signInWithEmail:success")
                     val user = auth.currentUser
+                    if (user != null) {
+                        updateUI(user)
+                    }
 
                 } else {
-                    // If sign in fails, display a message to the user.
-                    Log.w("TAG", "signInWithEmail:failure", task.exception)
+                    updateUI(null)
                 }
             }
+    }
+
+    private fun updateUI(currentUser: FirebaseUser?) {
+        if (currentUser != null) {
+            Navigation.createNavigateOnClickListener(R.id.action_signIn_to_home2)
+        }
     }
 
 }
