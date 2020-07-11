@@ -20,5 +20,6 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="sign_up">Sign Up</string>
     <string name="existing_user">Existing User? Log in</string>
+    <string name="background_imh">landing_background</string>
 
 </resources>
