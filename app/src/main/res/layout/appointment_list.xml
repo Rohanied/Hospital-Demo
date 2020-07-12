@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/blue_backfround">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appointment_date"
+        android:text="@string/_12_june_2020"
+        style="@style/head"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appointment_doctor"
+        android:text="@string/dr_ross_cooper"
+        style="@style/subtext"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="12dp"/>
+
+</LinearLayout>

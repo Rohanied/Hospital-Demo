@@ -20,4 +20,14 @@
         <item name="android:textColor">@color/textColorPrimary</item>
     </style>
 
+    <style name="head">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="subtext">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#E0E0E0</item>
+    </style>
+
 </resources>
