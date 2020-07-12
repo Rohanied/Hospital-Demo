@@ -20,5 +20,18 @@
     <string name="existing_user">Existing User? Log in</string>
     <string name="background_imh">landing_background</string>
     <string name="logo">Logo</string>
+    <string name="registration_id">Registration ID</string>
+    <string name="vag12002">vag12002</string>
+    <string name="last_date_visited">Last Date Visited</string>
+    <string name="_03_july_2020">03, July 2020</string>
+    <string name="present_health_condition">Present Health Condition</string>
+    <string name="recovering">Recovering</string>
+    <string name="view_records">View Records</string>
+    <string name="add_new_record">Add new Record</string>
+    <string name="upcoming_appointments">Upcoming Appointments</string>
+    <string name="_15_july_2020">15,July 2020</string>
+    <string name="past_appointments">Past Appointments</string>
+    <string name="_12_june_2020">12, June 2020</string>
+    <string name="dr_ross_cooper">Dr.Ross Cooper</string>
 
 </resources>
