@@ -1,6 +1,7 @@
 package com.ruthvikbr.hospital_demo.fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -52,10 +53,8 @@ class SignIn : Fragment() {
         }
 
         binding.cancelButton.setOnClickListener {
-            binding.emailEditText.setText(" ")
-            binding.passwordEditText.setText(" ")
-            it.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_signIn_to_landing))
-
+            binding.emailEditText.setText("")
+            binding.passwordEditText.setText("")
         }
 
         binding.signUpTextView.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_signIn_to_signUp))
@@ -76,6 +75,7 @@ class SignIn : Fragment() {
                     }
 
                 } else {
+                    Log.v("Login","${task.exception}")
                     updateUI(null)
                     Toast.makeText(requireContext(), "Login Failed", Toast.LENGTH_SHORT)
                         .show()

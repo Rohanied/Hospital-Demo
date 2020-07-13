@@ -9,15 +9,23 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.Navigation
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import com.ruthvikbr.hospital_demo.R
 
 
 class Landing : Fragment() {
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        auth = Firebase.auth
+        if(!(auth.currentUser == null)){
+            Navigation.createNavigateOnClickListener(R.id.action_landing_to_home2)
+        }
         return inflater.inflate(R.layout.fragment_landing, container, false)
     }
 

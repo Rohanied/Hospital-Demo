@@ -34,10 +34,9 @@ class SignUp : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.LoginTextView.setOnClickListener {
-            it.setOnClickListener(Navigation
-                .createNavigateOnClickListener(R.id.action_signIn_to_signUp))
-        }
+        binding.LoginTextView.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_signUp_to_signIn))
+
+
 
         binding.signUpButton.setOnClickListener {
             val email: String = binding.emailSignUpEditText.text.toString()
@@ -59,6 +58,11 @@ class SignUp : Fragment() {
                     .show()
             }
 
+        }
+
+        binding.cancelButton.setOnClickListener{
+            binding.emailSignUpEditText.setText("")
+            binding.passwordSignUpEditText.setText("")
         }
     }
 
