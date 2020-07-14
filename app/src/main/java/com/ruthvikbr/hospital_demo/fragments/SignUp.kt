@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
@@ -84,7 +85,7 @@ class SignUp : Fragment() {
 
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
-            Navigation.createNavigateOnClickListener(R.id.action_signIn_to_home2)
+            findNavController().navigate(R.id.action_signUp_to_home2)
         }
     }
 
