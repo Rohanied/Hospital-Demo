@@ -3,9 +3,6 @@ package com.ruthvikbr.hospital_demo
 
 
 import android.os.Bundle
-import android.view.animation.AnimationUtils
-
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 
