@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:contentDescription="@string/background_imh"
         android:scaleType="centerInside"
-        android:src="@drawable/landing_page"
+        android:src="@drawable/landing_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
