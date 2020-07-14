@@ -33,5 +33,15 @@
     <string name="past_appointments">Past Appointments</string>
     <string name="_12_june_2020">12, June 2020</string>
     <string name="dr_ross_cooper">Dr.Ross Cooper</string>
+    <string name="person_logo">Person_logo</string>
+    <string name="Submit">Submit</string>
+    <string name="age">Age</string>
+    <string name="surgeries">Previous Surgeries</string>
+    <string name="describe_current_medical_condition">Describe Current Medical Condition</string>
+    <string name="medical_details">Medical Details</string>
+    <string name="patient_appointments">Patient       Appointments</string>
+    <string name="hospital_details">Hospital Details</string>
+    <string name="medical_history">Medical History</string>
+    <string name="medication_reminder">Medication Reminder</string>
 
 </resources>

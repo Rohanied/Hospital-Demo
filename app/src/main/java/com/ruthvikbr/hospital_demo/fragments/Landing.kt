@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -23,8 +25,8 @@ class Landing : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         auth = Firebase.auth
-        if(!(auth.currentUser == null)){
-            Navigation.createNavigateOnClickListener(R.id.action_landing_to_home2)
+        if(auth.currentUser != null){
+            findNavController().navigate(R.id.action_landing_to_home2)
         }
         return inflater.inflate(R.layout.fragment_landing, container, false)
     }
